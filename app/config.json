@@ -1,5 +1,5 @@
 {
-  "serviceName": "View your education data",
+  "serviceName": "View your education data (VYED)",
   "plugins": {
     "govuk-frontend": {
       "rebrand": true
