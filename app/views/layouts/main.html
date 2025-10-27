@@ -6,6 +6,17 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
 {% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
 
+{% block stylesheets %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://design-system.service.gov.uk/assets/dfe-frontend/v2.9.0/dfefrontend.css" />
+{% endblock %}
+
+
+{% block scripts %}
+  {{ super() }}
+  <script src="https://design-system.service.gov.uk/assets/dfe-frontend/v1.0.0/dfefrontend.min.js"></script>
+{% endblock %}
+
 
 {% block header %}
 
