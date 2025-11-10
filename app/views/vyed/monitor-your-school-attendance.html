@@ -1,0 +1,46 @@
+{% extends "layouts/main.html" %}
+{% set pageName="Monitor your school attendance" %}
+{% from 'node_modules/dfe-frontend/packages/components/card/macro.njk' import card %}
+
+{% block beforeContent %}
+    {{ govukBackLink({
+        text: "Back",
+        href: "#"
+    }) }}
+
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-l">{{pageName}}</h1>
+
+<h1 class="govuk-heading-m">View school attendance data (demo)</h1>
+<ul class="govuk-list">
+  <li>
+    <a class="govuk-link" href="#">View school attenance data</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">Your attendance summary reports</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">Absence bandings user guide on GOV.UK (opens in a new tab)</a>
+  </li>
+</ul>
+
+<h1 class="govuk-heading-m">Compare your attendance (demo)</h1>
+<p><a href="">Compare your attendance</a></p>
+
+<h1 class="govuk-heading-m">Year 6 transition data download</h1>
+<ul class="govuk-list">
+  <li>
+    <a class="govuk-link" href="#">Year 6 transition data</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">User guide on GOV.UK (opens in a new tab)</a>
+  </li>
+</ul>
+
+<h1 class="govuk-heading-m">Monitor your school attendance - engagement</h1>
+<p><a href="">Engagement dashboard</a></p>
+
+{% endblock %}
+
