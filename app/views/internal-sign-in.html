@@ -2,6 +2,15 @@
 
 {% set pageName="Before you continue" %}
 
+{% block beforeContent %}
+
+    {{ govukBackLink({
+        text: "Back",
+        href: "javascript:window.history.back()"
+    }) }}
+
+{% endblock %}
+
 {% block content %}
 
 <div class="govuk-grid-row">
@@ -13,7 +22,7 @@
     
     {{ govukButton({
       text: "Continue",
-      href: "#"
+      href: "/vyed/product-page"
     }) }}
 
     <h1 class="govuk-heading-m">Further support</h1>
