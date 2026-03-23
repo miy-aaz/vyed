@@ -5,3 +5,11 @@
 // Add extra styles here
 @import 'node_modules/dfe-frontend/packages/dfefrontend';
 
+.govuk-notification-banner {
+    max-width: none;
+    width: 100%;
+}
+
+.govuk-notification-banner__heading {
+    max-width: none;
+}
