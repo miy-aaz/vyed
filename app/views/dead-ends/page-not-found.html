@@ -1,0 +1,30 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="What type of organisation do you work for?" %}
+
+{% block beforeContent %}
+
+    {{ govukBackLink({
+        text: "Back",
+        href: "javascript:window.history.back()"
+    }) }}
+
+{% endblock %}
+
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full-width">
+        <h1 class="govuk-heading-l">Page not found</h1>
+        <p class="govuk-body">
+          The product you’re trying to access has been moved, renamed or no longer exists.
+        </p>
+        <p class="govuk-body">
+          Go to the homepage and enter the product name in the search box at the top of the page.
+        </p>
+        <p class="govuk-body">
+          If you still cannot find the product you’re looking for, you can <a href="#" class="govuk-link">submit an enquiry</a>.
+    </div>
+  </div>
+{% endblock %}
